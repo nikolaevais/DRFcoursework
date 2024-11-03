@@ -6,13 +6,15 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('habits', '0002_initial'),
+        ("habits", "0002_initial"),
     ]
 
     operations = [
         migrations.AlterField(
-            model_name='habits',
-            name='time_to_complete',
-            field=models.DurationField(blank=True, null=True, verbose_name='Время на выполнение привычки'),
+            model_name="habits",
+            name="time_to_complete",
+            field=models.DurationField(
+                blank=True, null=True, verbose_name="Время на выполнение привычки"
+            ),
         ),
     ]
